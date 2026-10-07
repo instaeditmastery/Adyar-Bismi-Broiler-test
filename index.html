@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adyar Bismi Broiler | Fresh 100% Halal Mutton & Chicken Delivery in Adyar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins & Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#b91c1c', // Deep Red
+                        brandDarkRed: '#7f1d1d',
+                        brandGold: '#d97706', // Rich Gold / Amber
+                        brandLightGold: '#fef3c7',
+                        brandWhite: '#ffffff',
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brandGold selection:text-white">
+
+    <!-- Top Banner / Announcement Bar -->
+    <div class="bg-brandDarkRed text-brandGold text-xs sm:text-sm font-semibold py-2 px-4 text-center tracking-wide">
+        <i class="fa-solid fa-truck-fast mr-2"></i> FREE HOME DELIVERY within 6km of Adyar | Zero Extra Charges | 100% HALAL Guaranteed!
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-red-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-brandRed rounded-full flex items-center justify-center text-brandGold shadow-lg font-bold text-xl border-2 border-brandGold">
+                    <i class="fa-solid fa-shop"></i>
+                </div>
+                <div>
+                    <span class="block font-black text-lg sm:text-xl text-brandRed tracking-tight">ADYAR BISMI BROILER</span>
+                    <span class="block text-xs text-slate-500 font-medium">Wholesale & Retail • Mutton & Chicken</span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-700">
+                <a href="#offerings" class="hover:text-brandRed transition-colors">Offerings</a>
+                <a href="#pricing" class="hover:text-brandRed transition-colors">Today's Prices</a>
+                <a href="#order" class="hover:text-brandRed transition-colors">Order Now</a>
+                <a href="#reviews" class="hover:text-brandRed transition-colors">Reviews</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-3">
+                <button onclick="openAdminModal()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-600 px-3 py-2 rounded-lg font-medium transition border border-slate-200" title="Admin MRP Editor">
+                    <i class="fa-solid fa-lock mr-1"></i> Admin
+                </button>
+                <a href="https://wa.me/919500104674?text=Hi%20Adyar%20Bismi%20Broiler,%20I%20would%20like%20to%20know%20today's%20prices%20and%20place%20an%20order." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 rounded-xl shadow-md hover:shadow-lg transition flex items-center space-x-2 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">WhatsApp Us</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-brandRed via-brandDarkRed to-slate-900 text-white py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <span class="inline-flex items-center gap-2 bg-brandGold/20 text-brandGold border border-brandGold/40 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide">
+                    <i class="fa-solid fa-certificate"></i> Premium Quality & 100% Halal Certified
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    Fresh Tender <span class="text-brandGold">Mutton & Chicken</span> Delivered Free to Your Doorstep!
+                </h1>
+                <p class="text-slate-200 text-lg sm:text-xl font-normal max-w-2xl mx-auto lg:mx-0">
+                    Sourced fresh daily, cut to your preference, and delivered right on time in Adyar & surrounding areas (within 6km). Zero extra delivery charges!
+                </p>
+                
+                <!-- Trust Bullets -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-left">
+                    <div class="flex items-center space-x-3 bg-white/10 p-3 rounded-xl border border-white/10">
+                        <div class="w-8 h-8 rounded-full bg-brandGold text-slate-900 flex items-center justify-center font-bold">✓</div>
+                        <span class="text-sm font-medium">Free Home Delivery (&lt;6km)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white/10 p-3 rounded-xl border border-white/10">
+                        <div class="w-8 h-8 rounded-full bg-brandGold text-slate-900 flex items-center justify-center font-bold">✓</div>
+                        <span class="text-sm font-medium">Bulk Orders Welcome</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white/10 p-3 rounded-xl border border-white/10">
+                        <div class="w-8 h-8 rounded-full bg-brandGold text-slate-900 flex items-center justify-center font-bold">✓</div>
+                        <span class="text-sm font-medium">100% Halal Guaranteed</span>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#order" class="w-full sm:w-auto bg-brandGold hover:bg-amber-600 text-slate-900 font-bold px-8 py-4 rounded-xl shadow-xl transition transform hover:-translate-y-0.5 text-center text-lg flex items-center justify-center space-x-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Order via WhatsApp Now</span>
+                    </a>
+                    <a href="#pricing" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 transition text-center text-lg">
+                        View Daily Prices
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image / Visual Card -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-md bg-white text-slate-800 rounded-3xl p-6 shadow-2xl border-4 border-brandGold">
+                    <div class="absolute -top-4 -right-4 bg-brandGold text-slate-900 font-extrabold text-xs uppercase px-4 py-1.5 rounded-full shadow-md tracking-wider">
+                        Best in Adyar
+                    </div>
+                    <h3 class="text-2xl font-black text-brandRed mb-1">Adyar Bismi Broiler</h3>
+                    <p class="text-slate-500 text-sm mb-4"><i class="fa-solid fa-location-dot text-brandRed mr-1"></i> 9, Ellaiamman Koil St, Shastri Nagar, Adyar, Chennai</p>
+                    
+                    <div class="space-y-3 bg-red-50 p-4 rounded-2xl border border-red-100 mb-4">
+                        <div class="flex justify-between items-center text-sm font-semibold text-slate-700">
+                            <span>🕒 Opening Hours:</span>
+                            <span class="text-emerald-700 font-bold">Opens 6:30 AM Daily</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm font-semibold text-slate-700">
+                            <span>📞 Direct Contact:</span>
+                            <span class="text-brandRed font-bold">+91 95001 04674</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm font-semibold text-slate-700">
+                            <span>🚚 Delivery Radius:</span>
+                            <span class="text-slate-900 font-bold">Within 6 km (FREE)</span>
+                        </div>
+                    </div>
+
+                    <a href="tel:+919500104674" class="block w-full text-center bg-brandRed hover:bg-brandDarkRed text-white font-bold py-3 rounded-xl shadow transition">
+                        <i class="fa-solid fa-phone-volume mr-2"></i> Call Now for Immediate Dispatch
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our Fresh Offerings Section -->
+    <section id="offerings" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brandRed font-bold tracking-wider uppercase text-sm">What We Offer</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Our Premium Fresh Offerings</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Hygienically processed, top-grade meat delivered straight to your kitchen table.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Offering 1 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-red-100 text-brandRed rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brandRed group-hover:text-white transition">
+                            <i class="fa-solid fa-drumstick-bite"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Mutton & Chicken</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Juicy, tender broiler chicken and farm-fresh prime mutton cuts. Cleaned, skinned, or chopped exactly the way your recipe demands.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-brandRed flex items-center">
+                        <i class="fa-solid fa-check mr-2"></i> Custom cutting available on request
+                    </div>
+                </div>
+
+                <!-- Offering 2 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-amber-100 text-brandGold rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brandGold group-hover:text-white transition">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Bulk Orders Accepted</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Planning a family feast, wedding, or catering for restaurants? We take bulk orders of any size. Just tell us how much you need—we will fulfill your requirements seamlessly!
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-brandGold flex items-center">
+                        <i class="fa-solid fa-check mr-2"></i> Special rates for bulk quantities
+                    </div>
+                </div>
+
+                <!-- Offering 3 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">100% HALAL Certified</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Completely trusted and ethical processing adhering strictly to Halal standards. Pure taste, supreme hygiene, and uncompromised quality assurance.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-emerald-600 flex items-center">
+                        <i class="fa-solid fa-check mr-2"></i> 100% certified standards
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily MRP / Pricing Board Section -->
+    <section id="pricing" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div>
+                    <span class="text-brandRed font-bold tracking-wider uppercase text-sm">Transparent Pricing</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Today's MRP Rate Board</h2>
+                </div>
+                <div class="mt-4 md:mt-0 flex items-center space-x-3">
+                    <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full"><i class="fa-solid fa-circle text-[8px] mr-1 text-emerald-600 animate-pulse"></i> Live Rates</span>
+                    <button onclick="openAdminModal()" class="text-xs text-slate-600 hover:text-brandRed font-medium underline">Update Prices (Admin)</button>
+                </div>
+            </div>
+
+            <!-- Price Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" id="price-display-grid">
+                <!-- Dynamically populated via JS -->
+            </div>
+            <p class="text-xs text-slate-500 text-center mt-6">* Prices apply starting from half kg upwards. Free home delivery within 6km radius.</p>
+        </div>
+    </section>
+
+    <!-- Interactive WhatsApp Order Form Section -->
+    <section id="order" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-slate-900 to-brandDarkRed rounded-3xl p-8 sm:p-12 shadow-2xl text-white border-2 border-brandGold">
+                <div class="text-center mb-10 space-y-2">
+                    <span class="bg-brandGold text-slate-900 text-xs font-extrabold uppercase px-3 py-1 rounded-full">Instant WhatsApp Order</span>
+                    <h2 class="text-3xl sm:text-4xl font-black">Place Your Order Directly</h2>
+                    <p class="text-slate-300 text-sm">Fill in your requirements below. Clicking send will open WhatsApp automatically with your pre-filled order!</p>
+                </div>
+
+                <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Item Type -->
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-brandGold">1. Select Mutton or Chicken *</label>
+                            <select id="itemType" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brandGold transition">
+                                <option value="" disabled selected>-- Choose Item --</option>
+                                <option value="Broiler Chicken (Skinless)">Broiler Chicken (Skinless)</option>
+                                <option value="Broiler Chicken (With Skin)">Broiler Chicken (With Skin)</option>
+                                <option value="Fresh Mutton (Curry Cut)">Fresh Mutton (Curry Cut)</option>
+                                <option value="Fresh Mutton (Boneless)">Fresh Mutton (Boneless)</option>
+                                <option value="Country Chicken (Nattu Kozhi)">Country Chicken (Nattu Kozhi)</option>
+                                <option value="Bulk Order (Mixed / Custom)">Bulk Order (Mixed / Custom)</option>
+                            </select>
+                        </div>
+
+                        <!-- Quantity Required -->
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-brandGold">2. Quantity Required *</label>
+                            <select id="itemQty" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brandGold transition">
+                                <option value="" disabled selected>-- Select Quantity --</option>
+                                <option value="0.5 Kg">0.5 Kg (Half Kg)</option>
+                                <option value="1 Kg">1 Kg</option>
+                                <option value="1.5 Kg">1.5 Kg</option>
+                                <option value="2 Kg">2 Kg</option>
+                                <option value="3 Kg">3 Kg</option>
+                                <option value="5 Kg">5 Kg</option>
+                                <option value="Bulk Order (More than 5 Kg)">Bulk Order (More than 5 Kg)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Contact Number -->
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-brandGold">3. Your Contact Number *</label>
+                            <input type="tel" id="contactNum" placeholder="e.g. 9840123456" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brandGold transition">
+                        </div>
+
+                        <!-- Customer Name -->
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-brandGold">Your Name *</label>
+                            <input type="text" id="customerName" placeholder="Enter your full name" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brandGold transition">
+                        </div>
+                    </div>
+
+                    <!-- Delivery Address -->
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-brandGold">4. Address for Delivery (Free within 6km) *</label>
+                        <textarea id="deliveryAddress" rows="3" placeholder="Enter your complete street address, apartment/door no, landmark in Adyar..." required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brandGold transition"></textarea>
+                    </div>
+
+                    <!-- Notice Box -->
+                    <div class="bg-emerald-950/60 border border-emerald-500/40 p-4 rounded-xl text-xs text-emerald-200 flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 text-base mt-0.5"></i>
+                        <div>
+                            <strong class="text-white">FREE HOME DELIVERY:</strong> Zero Extra Charges. Available within 6km radius from Shastri Nagar, Adyar. Requirements will be instantly sent to WhatsApp number <strong>+919500104674</strong>.
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-xl transition flex items-center justify-center space-x-3 text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Send Order to WhatsApp (+91 95001 04674)</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonial Section -->
+    <section id="reviews" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brandRed font-bold tracking-wider uppercase text-sm">Customer Reviews</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Trusted by Families across Adyar</h2>
+                <div class="flex items-center justify-center space-x-1 text-amber-500 text-lg pt-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class="text-slate-700 font-bold ml-2 text-sm">4.0 / 5.0 (Google Verified Reviews)</span>
+                </div>
+            </div>
+
+            <!-- Testimonial Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                            "Good and neat business, trusted workers, and perfect business."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brandRed text-white font-bold flex items-center justify-center">PP</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Preetha P</h4>
+                            <span class="text-xs text-slate-400">Google Local Reviewer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                            "Extremely fresh meat and prompt home delivery. Always clean cuts and very courteous service right here in Shastri Nagar."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brandGold text-slate-900 font-bold flex items-center justify-center">KA</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Karthik Adhavan</h4>
+                            <span class="text-xs text-slate-400">Local Guide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                            "Best quality Halal chicken and mutton in Adyar. Bulk order delivered smoothly for our family function with zero hassle."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center">JA</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Jabid Ahamed</h4>
+                            <span class="text-xs text-slate-400">Google Local Reviewer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div>
+                <h3 class="text-xl font-black text-brandGold mb-2">Adyar Bismi Broiler</h3>
+                <p class="text-slate-400 text-sm">Wholesale & Retail Mutton and Chicken Shop. Freshness guaranteed every single day.</p>
+            </div>
+            <div class="text-slate-300 text-sm space-y-1">
+                <p><i class="fa-solid fa-location-dot text-brandRed mr-2"></i> 9, Ellaiamman Koil St, Shastri Nagar, Adyar, Chennai - 600020</p>
+                <p><i class="fa-solid fa-phone text-brandRed mr-2"></i> +91 95001 04674</p>
+                <p><i class="fa-solid fa-clock text-brandRed mr-2"></i> Opens Daily at 6:30 AM</p>
+            </div>
+            <div class="flex flex-col items-start md:items-end space-y-3">
+                <a href="https://wa.me/919500104674" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-xl font-bold text-sm shadow transition flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat on WhatsApp</span>
+                </a>
+                <p class="text-xs text-slate-500">© 2026 Adyar Bismi Broiler. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Password & MRP Editor Modal -->
+    <div id="adminModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative">
+            <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold">&times;</button>
+            
+            <!-- Login State -->
+            <div id="adminLoginView">
+                <div class="text-center mb-6">
+                    <div class="w-12 h-12 bg-red-100 text-brandRed rounded-full flex items-center justify-center mx-auto mb-2 text-lg">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Admin Portal Login</h3>
+                    <p class="text-xs text-slate-500">Enter password to update daily MRP prices</p>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Password</label>
+                        <input type="password" id="adminPasswordInput" placeholder="Enter admin password" class="w-full border border-slate-300 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brandRed">
+                        <p id="loginError" class="text-xs text-red-600 mt-1 hidden">Incorrect password. (Default is: bismi123)</p>
+                    </div>
+                    <button onclick="verifyAdminPassword()" class="w-full bg-brandRed hover:bg-brandDarkRed text-white font-bold py-3 rounded-xl text-sm transition shadow">
+                        Login to Edit Prices
+                    </button>
+                </div>
+            </div>
+
+            <!-- Editor State -->
+            <div id="adminEditorView" class="hidden">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-slate-900"><i class="fa-solid fa-pen-to-square text-brandRed mr-2"></i> Edit Daily MRP Prices</h3>
+                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-semibold">Authorized</span>
+                </div>
+                <div class="space-y-4 max-h-[60vh] overflow-y-auto pr-1" id="adminPriceFields">
+                    <!-- Populated via JS -->
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-200 flex space-x-3">
+                    <button onclick="savePrices()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-sm transition shadow">
+                        Save Changes
+                    </button>
+                    <button onclick="closeAdminModal()" class="px-4 bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold py-2.5 rounded-xl text-sm transition">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Default Pricing Data
+        const defaultPrices = [
+            { id: 'item1', name: 'Broiler Chicken (Skinless)', price: '₹240 / kg', badge: 'Most Popular' },
+            { id: 'item2', name: 'Broiler Chicken (With Skin)', price: '₹220 / kg', badge: 'Fresh Cut' },
+            { id: 'item3', name: 'Fresh Mutton (Curry Cut)', price: '₹780 / kg', badge: 'Prime Quality' },
+            { id: 'item4', name: 'Fresh Mutton (Boneless)', price: '₹880 / kg', badge: 'Special Cut' }
+        ];
+
+        // Load prices from LocalStorage or use defaults
+        function getPrices() {
+            const saved = localStorage.getItem('bismi_prices');
+            return saved ? JSON.parse(saved) : defaultPrices;
+        }
+
+        // Render Price Cards on Frontend
+        function renderPrices() {
+            const prices = getPrices();
+            const grid = document.getElementById('price-display-grid');
+            grid.innerHTML = '';
+            prices.forEach(item => {
+                grid.innerHTML += `
+                    <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200 flex items-center justify-between hover:shadow-md transition">
+                        <div>
+                            <span class="text-xs bg-red-100 text-brandRed font-bold px-2.5 py-1 rounded-full">${item.badge}</span>
+                            <h3 class="text-lg font-bold text-slate-900 mt-2">${item.name}</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Starting from 0.5 kg upwards</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-2xl font-black text-brandRed">${item.price}</span>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // WhatsApp Order Submission Handler
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const item = document.getElementById('itemType').value;
+            const qty = document.getElementById('itemQty').value;
+            const phone = document.getElementById('contactNum').value;
+            const name = document.getElementById('customerName').value;
+            const address = document.getElementById('deliveryAddress').value;
+
+            const message = `*New Order - Adyar Bismi Broiler*%0A%0A` +
+                            `1. *Item Required:* ${item}%0A` +
+                            `2. *Quantity:* ${qty}%0A` +
+                            `3. *Customer Name:* ${name}%0A` +
+                            `4. *Contact Number:* ${phone}%0A` +
+                            `5. *Delivery Address:* ${address}%0A%0A` +
+                            `*Note:* Free Home Delivery within 6km (Zero Extra Charges). Please confirm my order!`;
+
+            const whatsappUrl = `https://wa.me/919500104674?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Admin Modal Functions
+        function openAdminModal() {
+            document.getElementById('adminModal').classList.remove('hidden');
+            document.getElementById('adminLoginView').classList.remove('hidden');
+            document.getElementById('adminEditorView').classList.add('hidden');
+            document.getElementById('adminPasswordInput').value = '';
+            document.getElementById('loginError').classList.add('hidden');
+        }
+
+        function closeAdminModal() {
+            document.getElementById('adminModal').classList.add('hidden');
+        }
+
+        function verifyAdminPassword() {
+            const pass = document.getElementById('adminPasswordInput').value;
+            // Password set to 'bismi123'
+            if (pass === 'bismi123') {
+                document.getElementById('adminLoginView').classList.add('hidden');
+                document.getElementById('adminEditorView').classList.remove('hidden');
+                populateAdminEditor();
+            } else {
+                document.getElementById('loginError').classList.remove('hidden');
+            }
+        }
+
+        function populateAdminEditor() {
+            const prices = getPrices();
+            const container = document.getElementById('adminPriceFields');
+            container.innerHTML = '';
+            prices.forEach((item, index) => {
+                container.innerHTML += `
+                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2">
+                        <label class="block text-xs font-bold text-slate-700">${item.name}</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <input type="text" id="admin_name_${index}" value="${item.name}" class="text-xs border rounded px-2 py-1.5 bg-white">
+                            <input type="text" id="admin_price_${index}" value="${item.price}" class="text-xs border rounded px-2 py-1.5 bg-white font-bold text-brandRed">
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function savePrices() {
+            const prices = getPrices();
+            prices.forEach((item, index) => {
+                const updatedName = document.getElementById(`admin_name_${index}`).value;
+                const updatedPrice = document.getElementById(`admin_price_${index}`).value;
+                if(updatedName) item.name = updatedName;
+                if(updatedPrice) item.price = updatedPrice;
+            });
+            localStorage.setItem('bismi_prices', JSON.stringify(prices));
+            renderPrices();
+            closeAdminModal();
+            alert('Daily MRP Prices successfully updated!');
+        }
+
+        // Initial render on load
+        window.onload = function() {
+            renderPrices();
+        };
+    </script>
+</body>
+</html>
